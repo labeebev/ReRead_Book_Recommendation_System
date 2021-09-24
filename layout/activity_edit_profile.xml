@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e6f2f2"
+    tools:context=".EditProfileActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/txt_entername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/enter_name"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp" />
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:text="@string/username"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/txt_enterbirthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/enter_birthday"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp" />
+        <EditText
+            android:id="@+id/edit_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:layout_marginLeft="10dp"
+            android:hint="dd/mm/yyyy"
+            android:inputType="date"
+            android:autofillHints="" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/txt_editgender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/gender"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp" />
+        <RadioGroup
+            android:id="@+id/radiogrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/radiobt_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:layout_marginLeft="15dp"
+                android:onClick="onGenderButtonClicked"
+                android:layout_marginStart="15dp" />
+            <RadioButton
+                android:id="@+id/radiobt_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:layout_marginLeft="15dp"
+                android:onClick="onGenderButtonClicked"
+                android:layout_marginStart="15dp" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/txt_editabtme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/about_me"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp" />
+        <EditText
+            android:id="@+id/edit_abtme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:maxLength="50"
+            android:text="@string/not_set"
+            android:inputType="textAutoComplete"
+            android:autofillHints="" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:paddingStart="100dp"
+        android:paddingLeft="100dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/bt_saveprofile"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button"
+            android:padding="15dp"
+            android:text="@string/save"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+</LinearLayout>

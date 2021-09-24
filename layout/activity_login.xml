@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textMemberq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/trereg"
+        android:text="@string/you_are_not_a_member"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/textRegister2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/trebold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="200dp"
+        android:text="@string/register"
+        android:textColor="@color/blue1"
+        android:textSize="17sp"
+        android:layout_marginLeft="200dp" />
+
+    <EditText
+        android:id="@+id/etextemail"
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:background="@drawable/textfield"
+        android:fontFamily="@font/hpreg"
+        android:layout_below="@id/textGreet2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:paddingRight="15dp"
+        android:hint="example@gmail.com"
+        android:paddingLeft="15dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:id="@+id/btnLogin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:fontFamily="@font/trereg"
+        android:text="@string/login"
+        android:layout_below="@id/etextpass"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="60dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginLeft="60dp" />
+
+    <TextView
+        android:id="@+id/textGreet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hpbold"
+        android:text="@string/hello_there"
+        android:layout_marginStart="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="220dp"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:layout_marginLeft="40dp" />
+
+    <EditText
+        android:id="@+id/etextpass"
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:background="@drawable/textfield"
+        android:fontFamily="@font/hpreg"
+        android:hint="Password"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_below="@id/etextemail"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>
